@@ -29,7 +29,7 @@ Weathering App/
 ├── weather/ # Weather app (views, urls, templates)
 ├── templates/ # HTML templates
 ├── .env/ # Virtual environment (not tracked)
-├── .gitignore # Ignore rules
+├── .gitignore # Git ignore rules
 ├── manage.py # Django management script
 └── db.sqlite3 # SQLite database (local)
 
