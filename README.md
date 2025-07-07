@@ -75,10 +75,12 @@ python manage.py runserver
 Open your browser and go to:
 👉 http://127.0.0.1:8000/
 
-📌 Notes
--Make sure .env is included in your .gitignore (✅ already done)
--This app is for educational/demo purposes and uses SQLite for simplicity
--Replace your_openweathermap_api_key_here with your actual API key
+## 📌 Notes
+
+- Make sure `.env` is included in your `.gitignore` ✅ (already done)
+- This app is intended for educational/demo purposes and uses `SQLite` for simplicity
+- Replace `your_openweathermap_api_key_here` in your `.env` file with your actual API key from [OpenWeatherMap](https://openweathermap.org/)
+
 
 🙌 Author
 Made with 💻 by Shashank Rawat👹
