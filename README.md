@@ -44,18 +44,18 @@ Weathering App/
 git clone https://github.com/Shashank-712/Weather-app.git
 cd Weather-app
 ```
-2. Create & Activate a Virtual Environment
+###2. Create & Activate a Virtual Environment
 ```
 python -m venv .env
 source .env/Scripts/activate   # On Windows
 # or
 source .env/bin/activate       # On Mac/Linux
 ```
-3. Install Requirements
+###3. Install Requirements
 ```
 pip install -r requirements.txt
 ```
-4. Add Your OpenWeatherMap API Key
+###4. Add Your OpenWeatherMap API Key
 Create a .env file in the root folder and add:
 ```
 WEATHER_API_KEY=your_openweathermap_api_key_here
@@ -66,7 +66,7 @@ import os
 api_key = os.environ.get('WEATHER_API_KEY')
 ```
 (Or use python-decouple for better practice.)
-6. Run the App
+###5. Run the App
 ```
 python manage.py runserver
 ```
