@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
+    <title>Document</title>
+    <style>
+        .jumbotron-custom{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Weather App</h1>
+
+        <div class="form-container">
+            <form method="get" class="d-flex justify-content-center">
+                <input type="text" name= "city" form-control me-2 placeholder="Enter City Name" value="{{request.GET.city}}">
+                <button class="btn btn-primary">Get Weather</button>
+            </form>
+        </div>
+        {%if error_message %}
+        <div class="alert alert-danger mt-4" role="alert">
+            Error: {{error_message}}
+        </div>
+        {%elif weather_data%}
+        <div class="jumbotron jumbotron-custom mt-4">
+            <h2>Current Weather in {{weather_data.city}}</h2>
+            <p class="lead"><strong>Temperature:</strong>{{weather_data.temperature}}</p>
+            <p class="lead"><strong>Description:</strong>{{weather_data.description}}</p>
+            <p class="lead"><strong>Humidity:</strong>{{weather_data.humidity}}</p>
+            <p class="lead"><strong>Wind Speed:</strong>{{weather_data.wind_speed}}</p>
+        </div>
+        {%endif%}
+    </div>
+</body>
+</html>
