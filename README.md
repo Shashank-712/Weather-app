@@ -24,6 +24,7 @@ A beginner-friendly **Django-based weather app** that allows users to enter a ci
 ---
 
 ## 📁 Project Structure
+```
 Weathering App/
 ├── core/ # Django project settings
 ├── weather/ # Weather app (views, urls, templates)
@@ -32,6 +33,7 @@ Weathering App/
 ├── .gitignore # Git ignore rules
 ├── manage.py # Django management script
 └── db.sqlite3 # SQLite database (local)
+```
 
 
 ---
